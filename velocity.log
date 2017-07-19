@@ -1,0 +1,3 @@
+2017-07-05 17:21:27,878 - ResourceManager : unable to find resource '/templates/mappers.xml.vm' in any resource loader.
+2017-07-05 17:25:06,675 - ResourceManager : unable to find resource 'resources.sqlBaties' in any resource loader.
+2017-07-05 17:25:52,201 - ResourceManager : unable to find resource 'src.resources.sqlBaties' in any resource loader.
