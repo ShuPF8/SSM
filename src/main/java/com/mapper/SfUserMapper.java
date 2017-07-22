@@ -9,7 +9,7 @@ import com.baomidou.mybatisplus.mapper.BaseMapper;
  * </p>
  *
  * @author Yanghu
- * @since 2017-07-06
+ * @since 2017-07-22
  */
 public interface SfUserMapper extends BaseMapper<SfUser> {
 

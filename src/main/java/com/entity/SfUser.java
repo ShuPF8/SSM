@@ -12,7 +12,7 @@ import java.io.Serializable;
  * </p>
  *
  * @author Yanghu
- * @since 2017-07-06
+ * @since 2017-07-22
  */
 @TableName("sf_user")
 public class SfUser extends Model<SfUser> {
