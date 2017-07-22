@@ -12,11 +12,13 @@ public class PropertiesUtils {
     private static Properties properties = new Properties();
 
     /** 单列模式必须私有构造器
-     * 两种获取配置文件的方法
+     * 三种获取配置文件的方法
      * 1. 通过获取文件路径再用 InputStream 读取配置文件
      *   String path = URLDecoder.decode(PropertiesUtils.class.getResource("/jdbc.properties").getFile(),"UTF-8");
      *   InputStream is = new FileInputStream(path);
-     * 2. 直接通过 PropertiesUtils.class.getClassLoader().getResourceAsStream("jdbc.properties"); 获取 InputStream 流
+     * 2. 直接通过 PropertiesUtils.class.getClassLoader().getResourceAsStream("jdbc.properties");
+     *    获取 InputStream 流（此方法适用于单个模块的项目）
+     * 3. 通过 file.getAbsolutePath(); 读取配置文件路径 再用 InputStream 流读取配置文件（此方法适用于多模块）
      */
     private PropertiesUtils(){
         InputStream is = PropertiesUtils.class.getClassLoader().getResourceAsStream("jdbc.properties");
